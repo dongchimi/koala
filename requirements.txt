@@ -1,5 +1,5 @@
 networkx==2.1
-openpyxl==2.5.3
+openpyxl==2.6.1
 numpy==1.14.2
 Cython==0.28.2
 lxml==4.1.1

@@ -181,6 +181,8 @@ class Cell(CellBase):
         if not self.python_expression:
             return
 
+        self.python_expression = self.python_expression.replace('\r', '\\r').replace('\n', '\\n')
+
         # if we are a constant string, surround by quotes
         if (isinstance(self.value, (str, unicode)) and
                 not self.formula and
